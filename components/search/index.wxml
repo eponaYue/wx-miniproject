@@ -1,0 +1,5 @@
+<view class="search-bar">
+  搜索框
+  <slot name="lableText"></slot>
+  <slot name="lableIcon"></slot>
+</view>

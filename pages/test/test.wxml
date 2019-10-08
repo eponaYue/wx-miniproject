@@ -1,0 +1,7 @@
+<view class="test-container">
+  小程序测试页面
+  <search-comp>
+    <view slot="lableIcon">搜索图标</view>
+    <view slot="lableText">搜索关键字</view>
+  </search-comp>
+</view>

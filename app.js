@@ -1,11 +1,20 @@
-//app.js
+/**
+ * App()构造器注册小程序
+ */
 App({
-  onLaunch: function () {
+  /**
+   * 
+   * @param {path prerender query referrerInfo scene shareTicket} res 
+   * Do something initial when launch
+   */
+  onLaunch(res) {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
+    // 获取小程序启动时的参数，与App.onLaunch的回调参数一致
+    // console.log('wx.getLaunchOptionsSync:', wx.getLaunchOptionsSync());
+    // console.log('onLaunchParam:', res);
     // 登录
     wx.login({
       success: res => {
@@ -32,6 +41,28 @@ App({
         }
       }
     })
+  },
+  /**
+   * 
+   * @param {*} res 
+   * Do something when show
+   */
+  onShow(res) {
+    console.log('onAppShow: ', res);
+  },
+  /**
+   * Do something when hide
+   */
+  onHide() {
+
+  },
+  /**
+   * 
+   * @param {*} msg 
+   * 错误监听
+   */
+  onError(msg) {
+    console.log();
   },
   globalData: {
     userInfo: null

@@ -1,12 +1,13 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/test/test",
+    "pages/index/index"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "H3C智慧园区",
+    "resizable": true,
+    "pageOrientation": "auto"
   }
 }
